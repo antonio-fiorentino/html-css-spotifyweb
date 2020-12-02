@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .bianco{
   color: #fff;
 }
@@ -28,18 +34,22 @@
 .barra-laterale{
   background-color: black;
   height: calc(100% - 100px);
-  width: 200px;
+  width: 250px;
+  padding: 15px;
 }
 
 nav{
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   height: 100px;
   background-color: #080b12;
+  /* position: fixed;
+  top: 0;
+  right: 0; */
 }
 
 .home{
   background-color: #141922;
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   height: calc(100% - 200px);
 }
 
@@ -47,4 +57,21 @@ footer{
   background: #282828;
   height: 100px;
   width: 100%;
+}
+
+.barra-laterale>img{
+  width: 150px;
+  height: 50px;
+}
+
+.nav{
+}
+.nav img{
+  width: 30px;
+  height: 50px;
+}
+
+.bordo{
+  border-left: 1px #adff2f;
+
 }
