@@ -28,6 +28,26 @@ body{
   float: right;
 }
 
+h1{
+  font-size: 32px;
+}
+
+h2{
+  font-size: 22px;
+}
+
+h3{
+  font-size: 12px;
+}
+
+ul{
+  list-style: none;
+}
+
+.bordo{
+  border-left: 1px #adff2f;
+}
+
 #wrapper::after{
   content: "";
   display: table;
@@ -40,12 +60,7 @@ body{
   max-width: 100%;
 }
 
-.barra-laterale{
-  background-color: black;
-  height: calc(100% - 100px);
-  width: 250px;
-  padding: 15px;
-}
+/* Navbar superiore */
 
 nav{
   width: calc(100% - 250px);
@@ -57,23 +72,19 @@ nav{
   background-color: #080b12;
 }
 
-.canzoni{
-  margin-top: 100px;
-  padding-left: 15px;
+.upgrade{
+  line-height: 100px;
 }
 
-.home{
-  background-color: #141922;
-  width: calc(100% - 250px);
+/* /Navbar superiore */
+
+/* Barra laterale */
+
+.barra-laterale{
+  background-color: black;
   height: calc(100% - 100px);
-  overflow-y: auto;
-  font-size: 25px;
-}
-
-footer{
-  background: #282828;
-  height: 100px;
-  width: 100%;
+  width: 250px;
+  padding: 15px;
 }
 
 .barra-laterale>img{
@@ -81,13 +92,20 @@ footer{
   height: 50px;
 }
 
+.nav{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height:100%;
+}
+
 .nav>ul{
   margin-top: 20px;
 }
 
-/* .nav>ul>li>span{
-  vertical-align: middle;
-} */
+.nav li{
+  padding: 10px 0px;
+}
 
 .nav li:nth-of-type(4){
   text-transform: uppercase;
@@ -95,21 +113,10 @@ footer{
   color: #fff;
 }
 
-ul{
-  list-style: none;
+.side-bar{
+  vertical-align: middle;
 }
 
-.nav li{
-  padding: 10px 0px;
-}
-
-.nav{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  height:100%;
-
-}
 
 .side-bar{
   height: calc(100% - 100px);
@@ -124,33 +131,10 @@ ul{
   display: flex;
 }
 
-.nav img{
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
 
-.bordo{
-  border-left: 1px #adff2f;
+/* /Barra laterale */
 
-}
-
-
-.upgrade{
-  line-height: 100px;
-  /* margin-right: 10%; */
-}
-
-.btn-upgrade{
-  width: 200px;
-  height: 30px;
-  background-color: #080b12;
-  border-color: lightgrey;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 30px;
-}
+/* Home */
 
 .navbar-home{
   margin: auto;
@@ -170,25 +154,39 @@ ul{
   padding: 0px 10px;
 }
 
-h1{
-  font-size: 32px;
+.home{
+  background-color: #141922;
+  width: calc(100% - 250px);
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  font-size: 25px;
 }
 
-h2{
-  font-size: 22px;
+.btn-upgrade{
+  width: 200px;
+  height: 30px;
+  background-color: #080b12;
+  border-color: lightgrey;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
 }
 
-h3{
-  font-size: 12px;
+/* Album */
+
+.canzoni{
+  margin-top: 100px;
+  padding-left: 15px;
+}
+
+.titolo{
+  margin-bottom: 20px;
 }
 
 .home img{
   width: 250px;
   height: 250px;
-}
-
-.titolo{
-  margin-bottom: 20px;
 }
 
 .song{
@@ -198,4 +196,20 @@ h3{
 .flex{
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
+
+/* /Album */
+
+/* /Home */
+
+
+/* Footer */
+
+footer{
+  background: #282828;
+  height: 100px;
+  width: 100%;
+}
+
+/* /Footer */
