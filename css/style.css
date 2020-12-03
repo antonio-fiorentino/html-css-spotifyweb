@@ -45,16 +45,24 @@ body{
 nav{
   width: calc(100% - 250px);
   height: 100px;
+  position: fixed;
+  text-align: right;
+  padding-right: 50px;
+  line-height: 100px;
   background-color: #080b12;
-  /* position: fixed;
-  top: 0;
-  right: 0; */
+
+}
+
+.interno{
+  margin-top: 100px;
 }
 
 .home{
   background-color: #141922;
   width: calc(100% - 250px);
-  height: calc(100% - 200px);
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  font-size: 25px;
 }
 
 footer{
@@ -99,4 +107,21 @@ ul{
 .bordo{
   border-left: 1px #adff2f;
 
+}
+
+
+.upgrade{
+  line-height: 100px;
+  /* margin-right: 10%; */
+}
+
+.btn-upgrade{
+  width: 200px;
+  height: 30px;
+  background-color: #080b12;
+  border-color: lightgrey;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
 }
