@@ -37,7 +37,7 @@ body{
 
 .barra-laterale{
   background-color: black;
-  height:100% ;
+  height: calc(100% - 100px);
   width: 250px;
   padding: 15px;
 }
@@ -106,15 +106,16 @@ ul{
 }
 
 .side-bar{
-  height: calc(100% - 80px);
-
+  height: calc(100% - 100px);
+  align-content: space-between;
+  display: flex;
 }
 
 .profilo{
-  height: 80px;
+  height: 100px;
   flex-direction: column;
   align-content: space-between;
-
+  display: flex;
 }
 
 .nav img{
@@ -159,5 +160,5 @@ ul{
 
 .navbar-home li{
   display: inline-block;
-
+  padding: 0px 10px;
 }
