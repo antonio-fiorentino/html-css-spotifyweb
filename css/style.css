@@ -50,7 +50,6 @@ nav{
   padding-right: 50px;
   line-height: 100px;
   background-color: #080b12;
-
 }
 
 .interno{
@@ -96,6 +95,12 @@ ul{
 
 .nav li{
   padding: 10px 0px;
+}
+
+.nav{
+  display: flex;
+  align-content: space-between;
+  height: 100%;
 }
 
 .nav img{
