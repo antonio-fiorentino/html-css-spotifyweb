@@ -99,6 +99,10 @@ nav{
   height: 50px;
 }
 
+.logo-piccolo{
+  display: none;
+}
+
 .side-bar img{
   width: 30px;
   height: 30px;
@@ -253,3 +257,60 @@ footer{
 }
 
 /* /Footer */
+
+/* xs */
+
+@media (max-width: 575px){
+  .song{
+    width: calc(100% / 2)
+  }
+
+  .none{
+    display: none;
+  }
+
+  .barra-laterale{
+    height: calc(100% - 100px);
+    width: 60px;
+  }
+
+  .logo-piccolo{
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-spotify{
+    display: none;
+  }
+
+  nav{
+    width: calc(100% - 60px);
+  }
+
+  .home{
+    width: calc(100% - 60px);
+  }
+}
+
+/* /xs */
+
+/* sm */
+
+@media (max-width: 767px){
+  .song{
+    width: calc(100% / 2);
+  }
+}
+
+/* /sm */
+
+/* md */
+
+@media (max-width: 991px){
+  .song{
+    width: calc(100% / 4);
+  }
+}
+
+/* /md */
