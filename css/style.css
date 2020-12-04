@@ -44,8 +44,15 @@ ul{
   list-style: none;
 }
 
-.bordo{
-  border-left: 1px #adff2f;
+.bordol{
+  border-left: 3px solid #adff2f;
+}
+
+.bordob{
+  border-bottom: 3px solid #adff2f;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
 }
 
 #wrapper::after{
@@ -125,10 +132,32 @@ nav{
   overflow-y: auto;
 }
 
-.profilo{
-  height: 100px;
+.add{
+  font-size: 34px;
+  vertical-align: middle;
+  padding-right: 5px;
 }
 
+.profilo{
+  height: 60px;
+}
+
+.load{
+  margin-right: 5px;
+}
+
+.bordino-grigio{
+  border-bottom: 1px solid #52555b;
+}
+
+.user{
+  height: 20px;
+  width: 20px;
+  background-color: #52555b;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 
 /* /Barra laterale */
 
