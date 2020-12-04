@@ -87,9 +87,16 @@ nav{
   padding: 15px;
 }
 
-.barra-laterale>img{
+.logo{
   width: 150px;
   height: 50px;
+}
+
+.side-bar img{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .nav{
@@ -114,45 +121,18 @@ nav{
 }
 
 .side-bar{
-  vertical-align: middle;
-}
-
-
-.side-bar{
   height: calc(100% - 100px);
-  align-content: space-between;
-  display: flex;
+  overflow-y: auto;
 }
 
 .profilo{
   height: 100px;
-  flex-direction: column;
-  align-content: space-between;
-  display: flex;
 }
 
 
 /* /Barra laterale */
 
 /* Home */
-
-.navbar-home{
-  margin: auto;
-  width: 50%;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-
-.navbar-home ul{
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.navbar-home li{
-  display: inline-block;
-  padding: 0px 10px;
-}
 
 .home{
   background-color: #141922;
@@ -173,6 +153,24 @@ nav{
   border-radius: 30px;
 }
 
+.navbar-home{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.navbar-home ul{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.navbar-home li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+
 /* Album */
 
 .canzoni{
@@ -182,6 +180,10 @@ nav{
 
 .titolo{
   margin-bottom: 20px;
+}
+
+.margin-top{
+  margin-top: 20px;
 }
 
 .home img{
@@ -199,6 +201,15 @@ nav{
   flex-direction: row;
 }
 
+.flex-start{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.tondi img{
+  border-radius: 50%;
+}
 /* /Album */
 
 /* /Home */
