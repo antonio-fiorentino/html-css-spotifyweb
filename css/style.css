@@ -6,6 +6,7 @@
 
 body{
   font-size: 12px;
+  font-family: 'Mukta', sans-serif;
 }
 
 .center{
@@ -240,6 +241,11 @@ nav{
 }
 
 .song{
+  margin-right: 15px;
+  width: calc(100% / 6 - 15px);
+}
+
+.artisti{
   margin-right: 15px;
   width: calc(100% / 6 - 15px);
 }
