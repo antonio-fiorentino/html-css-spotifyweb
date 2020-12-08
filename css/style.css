@@ -204,6 +204,9 @@ nav{
   padding: 0px 10px;
 }
 
+ li:hover{
+  color: #fff;
+}
 /* Album */
 
 .canzoni{
@@ -245,16 +248,34 @@ nav{
   display: flex;
   flex-wrap: wrap;
 }
-/*
+
 .flex-start{
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-} */
+  flex-wrap: wrap;
+}
 
 .tondi img{
   border-radius: 50%;
 }
+
+.play{
+  display: none;
+}
+
+.song:hover .play{
+  width: 50px;
+  height: 50px;
+  display: block;
+  /* position: absolute;
+  transform: translate(-50% , -312%);
+  left: 390px; */
+}
+
+.canzone:hover{
+  background-color: rgba(000,000,000,0.8);
+  z-index: 10000;
+}
+
 /* /Album */
 
 /* /Home */
@@ -266,6 +287,76 @@ footer{
   background: #282828;
   height: 100px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+
+.mini, .options {
+  width: 20%;
+}
+
+.player {
+  width: 60%;
+  text-align: center;
+}
+
+.player ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.player ul li.big {
+  font-size: 32px;
+  padding: 10px 20px;
+}
+
+.player ul li.big:hover {
+  transform: scale(1.2);
+}
+
+.player-control-time {
+  background: rgba(255,255,255,.2);
+  width: 100%;
+  height: 4px;
+}
+
+.player-control-time .elapsed-time {
+  position: relative;
+  background: rgba(255,255,255,.8);
+  height: 100%;
+}
+
+.elapsed-time .point {
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  right: 0;
+  top: 50%;
+}
+
+.player-control-time:hover .point {
+  display: block;
+}
+
+.perc-20 {
+  width: 20%;
+}
+
+.perc-40 {
+  width: 40%;
 }
 
 /* /Footer */
