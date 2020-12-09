@@ -381,7 +381,7 @@ footer{
 .brano-produzione>img{
   height: 50px;
   width: 50px;
-  margin-right: 15px; 
+  margin-right: 15px;
 }
 
 .brano-produzione h1{
@@ -391,6 +391,18 @@ footer{
 .brano-produzione h3{
 }
 
+.salvare{
+  margin-left: 50px;
+}
+
+.options{
+  line-height: 100px;
+  text-align: center;
+}
+
+.options > *{
+  padding: 0px 5px;
+}
 /* /Footer */
 
 /* xs */
